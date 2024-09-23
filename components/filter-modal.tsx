@@ -1,4 +1,4 @@
-export default function FilterModal({ onClose }) {
+export default function FilterModal({ onClose } : { onClose: ()=>void}) {
     return (
       <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
         <div className="bg-white w-full max-w-[500px] p-8 rounded-lg shadow-lg relative">
