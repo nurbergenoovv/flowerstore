@@ -1,28 +1,21 @@
-import FilledButton from '../components/filled-button'
+import FilledButton from '../components/filled-button';
 
-export default function Carousel() {
-    return (
-        <div className="carousel overflow-hidden flex items-center justify-center  h-[409px]">
-            <div className="max-w-[1440px] w-[1440px] bg-custom-gradient h-full flex items-center ">
-                <div id="slide1" className="carousel-item relative w-full h-full">
-                    <div className="w-[764px] flex flex-col justify-center items-center gap-[50px] h-full">
-                        <div className="flex flex-col items-center justify-center gap-[30px]">
-                            
-                            <h1 className='text-4xl'>
-                                Идеальный букет за пару секунд!
-                            </h1>
-                            <p className='text-xl max-w-[491px] text-center'>
-                                Пройдите короткий тест и получите персональный букет благодаря AI функции.
-                            </p>
-                        </div>
-                        <FilledButton />
-                    </div>
-                    <div className="flex h-full">
-                    <img src="/1flower.png" alt="" />
-                    <img src="/2flower.png" alt="" />
-                    </div>
-                </div>
-            </div>
+const BouquetComponent = () => {
+  return (
+    <div className="bg-gradient-to-b from-pink-100 to-orange-100 min-h-screen py-10 px-5 max-w-full w-full flex items-center justify-center ">
+      <div className="text-center space-y-4 w-1/2 items-center justify-center">
+        <h1 className="max-w-screen w-full text-2xl md:text-4xl font-semibold text-gray-800">
+          Идеальный букет за пару секунд!
+        </h1>
+        <p className="max-w-full w-full text-sm md:text-lg text-gray-600">
+          Пройдите <span className="font-semibold">короткий</span> тест и получите персональный букет благодаря <span className="font-semibold">AI</span> функции.
+        </p>
+        <div className="w-full flex items-center justify-center">
+        <FilledButton />
         </div>
-    )
-}
+      </div>
+    </div>
+  );
+};
+
+export default BouquetComponent;

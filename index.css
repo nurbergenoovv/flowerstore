@@ -3,6 +3,9 @@
 @tailwind components;
 @tailwind utilities;
 
+/* *{
+    outline: 4px solid green !important;
+} */
 
 body{
     font-family: 'Montserrat Alternates', sans-serif;
